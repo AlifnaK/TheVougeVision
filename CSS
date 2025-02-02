@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f1e1; /* Beige background */
+    color: #333;
+}
+
+h1 {
+    color: #222;
+}
+
+h2 {
+    color: #6b705c;
+}
+
+p, ul {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #444;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#navigation button {
+    margin-right: 15px;
+}
+
+.section {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#submit-section input[type="file"] {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Color scheme: Black, Beige, Off-white */
+body {
+    background-color: #f4f1e1; /* Beige background */
+}
+
+button, #navigation button {
+    background-color: #333; /* Black buttons */
+}
+
+#navigation {
+    margin-bottom: 20px;
+}
