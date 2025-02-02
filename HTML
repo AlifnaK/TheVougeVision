@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue Vision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Vogue Vision</h1>
+    <p>Your guide to sustainable fashion and innovative design.</p>
+
+    <div id="navigation">
+        <button onclick="showSection('about')">About Us</button>
+        <button onclick="showSection('mission')">Our Mission</button>
+        <button onclick="showSection('submit')">Submit Your Designs</button>
+        <button onclick="showSection('rate')">Rate & Reflect</button>
+        <button onclick="showSection('contact')">Contact Us</button>
+    </div>
+
+    <div id="content">
+        <!-- About Us Section -->
+        <div id="about-section" class="section">
+            <h2>Welcome to Vogue Vision</h2>
+            <p>Vogue Vision is dedicated to promoting sustainable fashion and reducing the environmental impact of the fashion industry. We believe in creating stylish, eco-friendly clothing that empowers individuals and preserves the planet.</p>
+        </div>
+
+        <!-- Our Mission Section -->
+        <div id="mission-section" class="section">
+            <h2>Our Mission</h2>
+            <p>Because of 92 million tons of waste produced annually, the ecosystem, economy, and environment are suffering. This is what Vogue Vision is trying to combat, with the help of AI and the influence of people like you. Together, we can create a sustainable future for fashion.</p>
+        </div>
+
+        <!-- Submit Your Designs Section -->
+        <div id="submit-section" class="section">
+            <h2>Submit Your Designs</h2>
+            <p>We’d love to see your sustainable fashion ideas! Use the upload option below to submit your designs, and let’s work together to bring your vision to life.</p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="design-upload">Upload Your Design:</label><br>
+                <input type="file" id="design-upload" name="design" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Rate & Reflect Section -->
+        <div id="rate-section" class="section">
+            <h2>Rate & Reflect</h2>
+            <p>Check out what others think about Vogue Vision! Feel free to share your feedback.</p>
+            <iframe src="https://padlet.com/alifnakulsum/the-review-board-ptkqnu48xbdqb0uy" style="width:100%; height:500px; border:none;"></iframe>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div id="contact-section" class="section">
+            <h2>Contact Us</h2>
+            <p>Have any questions or suggestions? Reach out to us below!</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
